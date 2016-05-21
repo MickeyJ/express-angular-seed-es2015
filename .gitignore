@@ -1,0 +1,8 @@
+node_modules
+
+public/bundle.js
+public/main.css
+public/bower_components
+
+# Debug log from npm
+npm-debug.log

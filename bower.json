@@ -1,0 +1,16 @@
+{
+  "name": "express-angular-seed",
+  "description": "",
+  "authors": [
+    "Mickey <develop.agility@gmail.com>"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
