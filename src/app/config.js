@@ -2,8 +2,10 @@
 function AppConfig($stateProvider, $urlRouterProvider, $locationProvider){
   $stateProvider
     .state('app', {
-      url: '/',
-      template: '<h1>Hi</h1>'
+      abstract: true,
+      template: '@@import _layout.html',
+      controllerAs: '$ctrl',
+      controller: 'AppCtrl'
     });
 
   $urlRouterProvider.otherwise('/');

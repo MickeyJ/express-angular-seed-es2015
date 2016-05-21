@@ -1,11 +1,20 @@
 import 'angular'
 import 'angular-ui-router'
 
-import AppConfig from './app.config'
+import AppCtrl from './controller.js'
+import AppConfig from './config.js'
+
+import './layout'
+import './pages/home'
+import './pages/auth'
 
 const DEPENDS = [
-  'ui.router'
+  'ui.router',
+  'app.layout',
+  'app.home',
+  'app.auth'
 ];
 
-angular.module('app', DEPENDS)
+angular.module( 'app', DEPENDS )
+  .controller( 'AppCtrl', AppCtrl )
   .config( AppConfig );
